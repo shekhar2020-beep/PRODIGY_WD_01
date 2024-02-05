@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registrationpage</title>
+        <style>
+              
+            input[type=text],input[type=email],input[type=password]
+{
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  
+}
+
+.registerbtn
+{
+    background-color: #3f11f7;
+    width: 50%;
+    padding: 16px 20px;
+    color: white;
+    margin: 8px 0;
+    bottom: none;
+    border-radius: 5%;
+    
+}
+.registerbtn:hover
+{
+    opacity: 0.6;
+}
+.signin
+{
+    background-color: #f1f1f1;
+   text-align: center;
+}
+a{
+    color: dodgerblue;
+}
+input:hover
+{
+    opacity: 0.6;
+}
+.field
+{
+    border-radius: 5%;
+    box-shadow:var(50%)
+}
+/* input:focus
+{
+    background-color: aquamarine;
+} */
+.background
+{
+    background-color:#64bcf4;
+}
+
+        </style>
+        </head>
+        <body class="background">
+        
+            <form>
+                <fieldset style="margin-left: 15%; margin-right: 15%; margin-top: 10%; background-color: rgb(234, 235, 241);" class="field">
+                
+                    <h2 style="text-align: center;"><b>Sign Up</b></h2>
+                    <p style="text-align: center;"><i><b>Kindly fill up the form !!</b></></i></p>
+                    <hr>
+                    
+                    
+                    <label><b>Firstname:</b></label><br>
+                    <input type="text" placeholder="Enter Firstname" name="username" required value="">
+                    <label><b>Middlename:</b></label><br>
+                    <input type="text" placeholder="Enter Middlename" name="username" value="">
+                    <label><b>Lastname:</b></label><br>
+                    <input type="text" placeholder="Enter Lastname" name="username" value=""><br>
+
+
+                    
+                    <label><b>Gender:</b></label>
+                   <input type="radio" id="male" name="gender" value="Male">
+                   <label for="Male">Male</label>
+                   <input type="radio" id="female" name="gender" value="Female">
+                   <label for="Female">Female</label>
+                   <input type="radio" id="other" name="gender" value="Other">
+                   <lable for="Other">Other</lable>&nbsp &nbsp  &nbsp  &nbsp 
+
+                    <label><b>Domicile:</b></label>
+                    <select id="state" name="state">
+                        <option value="">--Select--</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <option value="Odisha">Odhisha</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Andra Pradesh">Andra Pradesh</option>
+                    </select><br>
+
+                    <label><b>Email:</b></label><br>
+                    <input type="email" placeholder="Enter Email" name="usermail id " value=""><br>
+                    <label><b>Correspondence Address:</b></label>
+                    <textarea id="address" name="Add" rows="4" cols="50"></textarea><br><br>
+                    <label><b>Password:</b></label><br>
+                    <input type="password" placeholder="Enter password" name="pwd" value=""><br>
+                    <label><b>Repeat password:</b></label><br>
+                    <input type="password" placeholder="Repeat password" name="pwd" value=""><br>
+
+                
+
+                    <button type="submit" class="registerbtn">Register</button><br>
+
+                    <div class="container signin">
+                        <p>Already have an account?<a href="#">Log in</a></p>
+                    </div>
+                </fieldset>
+            </form>
+            <!-- <script>
+                // JavaScript to handle responsive behavior
+        
+                const navToggle = document.querySelector('.nav-toggle');
+                const fieldset = document.querySelector('.field');
+        
+                navToggle.addEventListener('click', () => {
+                    fieldset.classList.toggle('nav-open');
+                });
+            </script> -->
+            
+        </body>
+    
+</html>
